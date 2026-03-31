@@ -18,7 +18,7 @@ Aplicación web desarrollada con Laravel que permite a los usuarios explorar, bu
 - 🔐 Autenticación de usuarios (registro e inicio de sesión)
 - 📧 Recuperación de contraseña vía correo electrónico
 - 🔎 Búsqueda de películas
-- 🛠️ Panel administrativo (según implementación)
+- 🛠️ Panel administrativo
 - ⚡ Interfaz dinámica y responsive
 
 ---
@@ -26,7 +26,7 @@ Aplicación web desarrollada con Laravel que permite a los usuarios explorar, bu
 ## 🧰 Tecnologías
 
 - **Backend:** Laravel 12 / PHP 8.4  
-- **Frontend:** Blade / Bootstrap (o framework usado)  
+- **Frontend:** Blade / Bootstrap
 - **Base de datos:** MySQL  
 - **Herramientas:** Composer, Node.js, NPM  
 
@@ -43,3 +43,15 @@ cp .env.example .env
 php artisan key:generate
 php artisan migrate
 php artisan serve
+
+---
+
+👨‍💻 Autor
+
+Luis Eduardo Vázquez Alcocer
+
+---
+
+📄 Licencia
+
+Este proyecto es de uso libre para fines educativos y personales.
