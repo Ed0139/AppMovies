@@ -31,6 +31,17 @@ Aplicación web desarrollada con Laravel que permite a los usuarios explorar, bu
 - **Herramientas:** Composer, Node.js, NPM  
 
 ---
+## 👨‍💻 Autor
+
+- Luis Eduardo Vázquez Alcocer
+
+---
+
+## 📄 Licencia
+
+**Este proyecto es de uso libre para fines educativos y personales.**
+
+---
 
 ## ⚙️ Instalación
 
@@ -43,15 +54,3 @@ cp .env.example .env
 php artisan key:generate
 php artisan migrate
 php artisan serve
-
----
-
-## 👨‍💻 Autor
-
-Luis Eduardo Vázquez Alcocer
-
----
-
-## 📄 Licencia
-
-Este proyecto es de uso libre para fines educativos y personales.
