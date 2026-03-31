@@ -46,12 +46,12 @@ php artisan serve
 
 ---
 
-👨‍💻 Autor
+## 👨‍💻 Autor
 
 Luis Eduardo Vázquez Alcocer
 
 ---
 
-📄 Licencia
+## 📄 Licencia
 
 Este proyecto es de uso libre para fines educativos y personales.
