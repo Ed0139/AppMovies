@@ -9,36 +9,33 @@ use Illuminate\Support\Facades\Auth;
 class FavoriteController extends Controller
 {
 
-public function store(Request $request)
-{
+  public function store(Request $request)
+  {
 
-$favorite = Favorite::where('user_id',Auth::id())
-->where('movie_id',$request->movie_id)
-->first();
+    $favorite = Favorite::where('user_id', Auth::id())
+      ->where('movie_id', $request->movie_id)
+      ->first();
 
-if($favorite){
+    if ($favorite) {
 
-$favorite->delete();
+      $favorite->delete();
 
-return response()->json([
-"status"=>"removed"
-]);
+      return response()->json([
+        "status" => "removed"
+      ]);
+    }
 
-}
+    Favorite::create([
 
-Favorite::create([
+      'user_id' => Auth::id(),
+      'movie_id' => $request->movie_id,
+      'title' => $request->title,
+      'poster' => $request->poster
 
-'user_id'=>Auth::id(),
-'movie_id'=>$request->movie_id,
-'title'=>$request->title,
-'poster'=>$request->poster
+    ]);
 
-]);
-
-return response()->json([
-"status"=>"added"
-]);
-
-}
-
+    return response()->json([
+      "status" => "added"
+    ]);
+  }
 }
